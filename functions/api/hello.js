@@ -1,8 +1,6 @@
-addEventListener('fetch', event => {
-    event.respondWith(handleRequest(event.request));
-  });
+export default {
+  async fetch(request) {
+    return new Response("Hello World!");
+  },
 
-async function handleRequest(request) {
-return new Response('Hello world');
-}
-  
+};
